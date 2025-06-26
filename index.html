@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Online Coffe Shop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="icon" type="image/x-icon" href="img/coffee-shop-logo-removebg.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+
+    <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+<body>
+
+    <main class="bg-light">
+
+        <!-- start navbar -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <nav class="navbar navbar-transparent navbar-expand-lg" id="navbar" style="position: fixed;width: 100%;z-index: 100;">
+            <div class="container-fluid">
+              <a class="navbar-brand me-5" href="#"><img src="img/coffee-shop-logo-removebg.png" height="80px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active dark" aria-current="page" href="index.html" style="font-size:20px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dark" href="shop.html" style="font-size:20px;">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dark" href="franchise.html" style="font-size:20px;">Franchise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dark" href="location.html" style="font-size:20px;">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dark" href="aboutus.html" style="font-size:20px;">About Us</a>
+                    </li>
+                    </ul>
+                    <div class="buttons d-flex me-5">
+                        <div class="me-3">
+                            <a href="login.html"><button class="btn btn-success" style="border-radius: 0px;">Login</button></a>
+                        </div>
+                        <div>
+                            <a href="register.html"><button class="btn btn-primary" style="border-radius: 0px;">Register</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav> <!-- end navbar -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- start pop up ads-->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <!-- Overlay div -->
+        <div class="ad-overlay" id="adOverlay"></div>
+        <!-- Pop-up ad -->
+        <div class="ad-popup" id="adPopup">
+            <button id="closeBtn" class="btn" style="position:absolute;right:5px;margin-bottom:-30px"><i class="fa-solid fa-circle-xmark" style="font-size:20px"></i></button>
+            <div>
+                <img src="img/lazada-ads.png" height="290px" width="100%" style="object-fit: contain;">
+                <div class="p-3">
+                    <h2>Wait, we have a special offer</h2>
+                    <p>Enter your email and get 15% off coupon</p>
+                    <input type="text" class="form-control " style="border-radius:0px" placeholder="Enter your email">
+                    <button type="submit" class="btn btn-primary mt-3 w-100" style="border-radius: 0px;">Get my coupon now</button>
+                </div>
+            </div>
+        </div><!-- end pop up ads-->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        
+
+        
+        <!-- start banner page -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <section class="home-background pt-5">
+            <div class="d-flex flex-column align-items-center justify-content-center my-5">
+                <h1 class="text-white paragraph-title" style="font-family: alcester;">Where every sip tells a story.</h1>
+                <h2 class="text-white paragraph-text" style="font-family: alcester;">Sip, savor, repeat</h2>
+            </div>
+            <div>
+                <a href="shop.html" class="btn btn-lg btn-warning" style="border-radius: 0px;">Order Now</a>
+            </div>
+        </section> <!-- end banner page -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- start main content -->
+        <section class="d-flex justify-content-center border">   
+            
+            <!-- start home content -->
+            <div>
+                <!-- start we offer section -->
+                <!-- ----------------------------------------------------------------------------------------------------------------- -->
+                <section class="py-5 bg-light">
+                    <div class="text-center mb-5">
+                        <h1 class="font-coffee">We Offer</h1>
+                    </div>
+
+                    <div class="container pt-5">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 mb-5">
+                                <div class="card" style="margin-inline:auto">
+                                    <img class="card-image mb-3" src="img/home-coffee.png" alt="espresso cup" height="150x" width="150">
+                                    <div class="card-body">
+                                    <h3 class="card-title text-center mb-5">Coffee</h3>
+                                    <a href="shop.html #coffee" class="btn btn-success w-100" style="border-radius: 0px;">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 mb-5">
+                                <div class="card" style="margin-inline:auto">
+                                    <img class="card-image mb-3" src="img/cake.png" alt="espresso cup" height="150x" width="200">
+                                    <div class="card-body">
+                                    <h3 class="card-title text-center mb-5">Cake</h3>
+                                    <a href="shop.html #cake" class="btn btn-success w-100" style="border-radius: 0px;">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 mb-5">
+                                <div class="card" style="margin-inline:auto">
+                                    <img class="card-image mb-3" src="img/merchandise.png" alt="espresso cup" height="150x" width="200">
+                                    <div class="card-body">
+                                    <h3 class="card-title text-center mb-5">Merchandise</h3>
+                                    <a href="shop.html #merchandise" class="btn btn-success w-100" style="border-radius: 0px;">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> <!-- end section -->
+                <!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+
+                <!-- start short about us content -->
+                <!-- ----------------------------------------------------------------------------------------------------------------- -->
+                <section class="py-5">
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bold font-coffee">About Us</h1>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <img src="img/about-coffee-removebg-preview.png" alt="about us coffee" height="400px">
+                            </div>
+                            <div class="col d-flex flex-column justify-content-center">
+                                <h2 class="font-coffee text-center mb-5">Online Coffee Shop Phillipines</h2>
+                                <p class="paragraph-justify font-coffee" style="line-height: 30px;">In today's digital era, the concept of an online coffee shop has gained significant traction, appealing to entrepreneurs looking to capitalize on the growing coffee culture and e-commerce boom. There are numerous compelling reasons why starting an online coffee shop is a smart and profitable business decision. This essay explores the key advantages, including the burgeoning coffee culture, the rapid growth of e-commerce, low overhead costs, flexibility, scalability, the benefits of the direct-to-consumer (DTC) model, and the potential of subscription services. Coffee has transcended its status as merely a beverage to become an integral part of modern lifestyle and culture. The rise of specialty coffee, with its emphasis on unique flavors, high-quality beans, and artisanal brewing methods, has created a robust market for coffee enthusiasts.</p>
+                                <div>
+                                    <a href="aboutus.html" class="btn btn-lg btn-outline-secondary" style="border-radius: 0px;">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> <!-- end short about us content -->
+                <!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+
+                <!-- start short our location content -->
+                <!-- ----------------------------------------------------------------------------------------------------------------- -->
+                <section class="py-5 bg-light">
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bold font-coffee">Our Location</h1>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <img class="" src="img/coffee-store.jpg" alt="espresso cup" height="500x">
+                            </div>
+                            <div class="col d-flex flex-column justify-content-center">
+                                <h2 class="font-coffee text-center mb-5">Rosario Cavite</h2>
+                                <h5 class="paragraph-justify font-coffee mb-5"><i class="fa-solid fa-phone"></i> Mobile Phone: 09030361553</h5>
+                                <h5 class="paragraph-justify font-coffee mb-5"><i class="fa-brands fa-facebook"></i> Facebook Page: <a href="#">Onlinecoffeeshop@gmail.com</a></h5>
+                                <h5 class="paragraph-justify font-coffee mb-5"><i class="fa-brands fa-square-instagram"></i> Instagram: <a href="#">Onlinecoffeeshop@gmail.com</a></h5>
+                                <div>
+                                    <a href="location.html" class="btn btn-lg btn-outline-secondary" style="border-radius: 0px;">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                </section> <!-- end short our location content -->
+                <!-- ----------------------------------------------------------------------------------------------------------------- -->
+            </div><!-- end home content -->
+
+
+            <!-- start skinning ads -->
+            <!-- ----------------------------------------------------------------------------------------------------------------- -->
+            <aside class="bg-white">
+                <div class="p-2 text-center">
+                    <h4>Advertisements</h4>
+                </div>
+                <div class="d-flex flex-column mb-5">
+                    <img src="img/pizzahut.png" height="260px" width="100%" style="object-fit: contain;">
+                    <a href="https://www.pizzahut.com.ph/" target="_blank">https://www.pizzahut.com.ph/</a>
+                </div>
+                <div class="d-flex flex-column text-center mb-5">
+                    <img src="img/dito-sim.png" height="350px" width="auto" style="object-fit: contain;">
+                    <a href="https://dito.ph/starterpack" target="_blank">https://dito.ph/starterpack</a>
+                </div>
+                <div class="d-flex flex-column text-center mb-5">
+                    <img src="img/smart-adss.jpg" height="200px" width="auto" style="object-fit: contain;">
+                    <a href="https://smart.com.ph/corporate" target="_blank">https://smart.com.ph/corporate</a>
+                </div>
+                <div class="d-flex flex-column text-center mb-5">
+                    <img src="img/mcdo-ads.jpg" height="250px" width="auto" style="object-fit: contain;">
+                    <a href="https://www.mcdelivery.com.ph/account/location/" target="_blank">https://www.mcdelivery.com</a>
+                </div>
+            </aside> <!-- end skinning ads -->
+            <!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+        </section> <!-- end of main content-->
+
+
+        <!-- start marquee content -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <section class="bg-light py-5">
+            <marquee scrollamount="15">
+                <div class="d-flex">
+                    <div class="mx-5">
+                        <img src="img/lazada.png" height="70px">
+                    </div>
+                    <div class="mx-5">
+                        <img src="img/shoppee.png" height="70px">
+                    </div>
+                    <div class="mx-5">
+                        <img src="img/foodpanda.png" height="70px">
+                    </div>
+                </div>
+            </marquee>
+        </section> <!-- end marquee content-->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- start footer content -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <footer class=" bg-light pt-5"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <h5>Links</h5>
+                        </div>
+                        <div class="d-flex flex-column" style="line-height: 35px;">
+                            <a href="index.html">Home</a>
+                            <a href="shop.html">Shop</a>
+                            <a href="franchise.html">franchise</a>
+                            <a href="location.html">Location</a>
+                            <a href="aboutus.html">About Us</a>
+                            <a href="faqs.html">FAQ's</a>
+                            <a href="terms-privacy.html">Terms in Privacy</a>
+                            <a href="terms-condition.html">Terms and Condition</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <h5>Social Media</h5>
+                        </div>
+                        <div class="d-flex flex-column" style="line-height: 35px;">
+                            <p ><i class="fa-brands fa-facebook me-2"></i> <a href="#">Onlinecoffeeshop@gmail.com</a></p>
+                            <p ><i class="fa-brands fa-square-instagram me-2"></i> <a href="#">Onlinecoffeeshop@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div>
+                            <img src="img/coffee-shop-logo-removebg.png" height="100px">
+                        </div>
+                    </div>
+                </div>
+                <div class="py-3 text-center">
+                    <p>Copyright © 2024, Online Coffee Shop.</p>
+                </div>
+            </div>
+        </footer> <!-- end of footer content-->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+    
+</main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/function.js"></script>
+
+</body>
+</html>

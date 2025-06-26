@@ -1,0 +1,117 @@
+@media screen and (max-width: 1300px) {
+    aside {
+        display:none
+    }
+}
+
+/* Base styles */
+
+.ad-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1040; /* Lower than the pop-up */
+}
+.ad-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1050; /* Higher than the overlay */
+    text-align: center;
+    overflow-y: auto; /* Allow scrolling within the pop-up */
+}
+
+
+@media screen and (max-width: 991px) {
+    #navbar {
+        background-color: #ecd3bf;
+    }
+    .navbar-nav {
+        text-align: center;
+    
+    }
+    .nav-item {
+        margin-bottom: 3px;
+        background: rgba(0,0,0,0.2);
+    }
+    .buttons {
+        display: block;
+        justify-content: center;
+    }
+}
+
+.font-coffee {
+    color: #80411e;
+}
+
+.paragraph-justify {
+    text-align: justify;
+}
+
+.navbar-transparent {
+    background-color: rgba(250,250,250,0.5)
+}
+
+.navbar-scrolled {
+background-color: #ecd3bf;/* Adjust as needed */
+transition: background-color 0.3s ease;
+}
+
+.paragraph-title {
+    font-size: clamp(1.875rem, 0.625rem + 4.4444vw, 3.125rem);
+}
+
+.paragraph-text {
+    font-size: clamp(1.25rem, 0rem + 4.4444vw, 2.5rem);
+}
+
+.home-background {
+    height: 400px;
+    background:rgba(250,250,250,0.1)url('../../img/coffee-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:hue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+li {
+    padding: 0px 25px;
+}
+
+li:hover {
+    background: rgba(0,0,0,0.2);
+}
+
+.card {
+    background: #ffecd0;
+    width: 18rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Increase the scale on hover */
+}
+
+.card-image {
+    position: relative;
+    margin-top: -40px;
+    object-fit: cover;
+    margin-inline: auto;
+}

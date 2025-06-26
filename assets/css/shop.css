@@ -1,0 +1,144 @@
+
+
+.popup-ad {
+    position: fixed;
+    right: -300px; /* Adjust this value to match the ad's width */
+    top: 10%;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: right 0.2s ease-in-out;
+  }
+  .popup-ad.show {
+    right: 0;
+  }
+  .popup-ad .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+
+@media screen and (max-width: 991px) {
+    #navbar {
+        background-color: #ecd3bf;
+    }
+    .navbar-nav {
+        text-align: center;
+    
+    }
+    .nav-item {
+        margin-bottom: 3px;
+        background: rgba(0,0,0,0.2);
+    }
+    .buttons {
+        display: block;
+        justify-content: center;
+    }
+}
+
+.font-coffee {
+    color: #80411e;
+}
+
+.paragraph-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.navbar-transparent {
+    background-color: rgba(250,250,250,0.5)
+}
+
+.navbar-scrolled {
+background-color: #ecd3bf;/* Adjust as needed */
+transition: background-color 0.3s ease;
+}
+
+.paragraph-title {
+    font-size: clamp(1.875rem, 0.625rem + 4.4444vw, 3.125rem);
+}
+
+.paragraph-text {
+    font-size: clamp(1.25rem, 0rem + 4.4444vw, 2.5rem);
+}
+
+.banner{
+    height: 400px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    padding: 0px 25px;
+}
+
+li:hover {
+    background: rgba(0,0,0,0.2);
+}
+
+.card {
+    background: #ffecd0;
+    width: 200px;
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Increase the scale on hover */
+}
+
+.card-image {
+    position: relative;
+    margin-top: -40px;
+    object-fit: cover;
+    margin-inline: auto;
+    height:150px;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+    background: #ffecd0;
+    width: 150px;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    }
+
+    .card:hover {
+        cursor: pointer;
+        transform: scale(1.1); /* Increase the scale on hover */
+    }
+
+    .card-image {
+        position: relative;
+        margin-top: -40px;
+        object-fit: cover;
+        margin-inline: auto;
+        height:100px;
+        width: 100%;
+    }
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}

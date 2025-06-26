@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Online Coffe Shop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="icon" type="image/x-icon" href="img/coffee-shop-logo-removebg.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+
+    <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+<body>
+
+    <main>
+
+        
+        <!-- start navbar -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <nav class="navbar navbar-transparent navbar-expand-lg" id="navbar" style="position: fixed;width: 100%;z-index: 100;">
+            <div class="container-fluid">
+              <a class="navbar-brand me-5" href="#"><img src="img/coffee-shop-logo-removebg.png" height="80px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active dark" aria-current="page" href="index.html" style="font-size:20px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dark" href="shop.html" style="font-size:20px;">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dark" href="franchise.html" style="font-size:20px;">Franchise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dark" href="location.html" style="font-size:20px;">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dark" href="aboutus.html" style="font-size:20px;">About Us</a>
+                    </li>
+                    </ul>
+                    <div class="buttons d-flex me-5">
+                        <div class="me-3">
+                            <a href="login.html"><button class="btn btn-success" style="border-radius: 0px;">Login</button></a>
+                        </div>
+                        <div>
+                            <a href="register.html"><button class="btn btn-primary" style="border-radius: 0px;">Register</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav> <!-- end navbar -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+
+        
+        <!-- start banner page -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <section class="home-background pt-5">
+            <div class="d-flex flex-column align-items-center justify-content-center my-5">
+                <h1 class="text-white paragraph-title">Frequently Asked Questions</h1>
+            </div>
+        </section> <!-- end banner page -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- start faqs content -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <section class="container">
+
+            <div class="container-fluid mt-5">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-lg-8 col-md-6 col-sm-12">
+
+                        <!-- start general information content -->
+                        <div class="my-3">
+                            <h5>General Information</h5>
+                        </div>
+
+                        <div class="accordion mb-5" id="accordionPanelsStayOpenExample">
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    What are your opening hours?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    We are open from 7:00 AM to 8:00 PM, Monday through Friday, and from 8:00 AM to 6:00 PM on weekends.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Where are you located?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    Our coffee shop is located at 123 Brew Lane, Coffee City, CA 90210.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Do you have Wi-Fi?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    Yes, we offer free Wi-Fi to all our customers. Just ask a staff member for the password.
+                                </div>
+                            </div>
+                            </div>
+                        </div> <!-- end general information content -->
+
+
+                        <!-- start Menu and Dietary Options content -->
+                        <div class="my-3">
+                            <h5>Menu and Dietary Options</h5>
+                        </div>
+
+                        <div class="accordion mb-5" id="accordionPanelsStayOpenExample2">
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample2-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample2-collapseOne" aria-expanded="true" aria-controls="panelsStayOpenExample2-collapseOne">
+                                    Do you have any vegan options?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample2-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpenExample2-headingOne">
+                                <div class="accordion-body">
+                                    Yes, we have a variety of vegan options including almond milk, soy milk, oat milk, and a selection of vegan pastries.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample2-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample2-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpenExample2-collapseTwo">
+                                    Can I customize my drink?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample2-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpenExample2-headingTwo">
+                                <div class="accordion-body">
+                                    Absolutely! You can customize your drink with different milk options, syrups, and espresso shots.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample2-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample2-collapseThree" aria-expanded="false" aria-controls="panelsStayOpenExample2-collapseThree">
+                                    Do you offer gluten-free pastries?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample2-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpenExample2-headingThree">
+                                <div class="accordion-body">
+                                    Yes, we offer several gluten-free pastries. Please ask our staff for today's selection.
+                                </div>
+                            </div>
+                            </div>
+                        </div> <!-- end Menu and Dietary Options content -->
+
+
+                        <!-- start Loyalty Program content -->
+                        <div class="my-3">
+                            <h5>Loyalty Program</h5>
+                        </div>
+
+                        <div class="accordion mb-5" id="accordionPanelsStayOpenExample3">
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample3-headingOne">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample3-collapseOne" aria-expanded="true" aria-controls="panelsStayOpenExample3-collapseOne">
+                                    Do you have a loyalty program?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample3-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpenExample3-headingOne">
+                                <div class="accordion-body">
+                                    Yes, we have a loyalty program where you can earn points for every purchase. After earning a certain number of points, you can redeem them for free drinks or discounts.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample3-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample3-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpenExample3-collapseTwo">
+                                    How do I sign up for the loyalty program?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample3-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpenExample3-headingTwo">
+                                <div class="accordion-body">
+                                    You can sign up for our loyalty program at the counter or through our mobile app.
+                                </div>
+                            </div>
+                            </div>
+                        </div> <!-- end Loyalty Program content -->
+
+
+                        <!-- start Special Offers and Events content -->
+                        <div class="my-3">
+                            <h5>Special Offers and Events</h5>
+                        </div>
+
+                        <div class="accordion mb-5" id="accordionPanelsStayOpenExample4">
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample4-headingOne">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample4-collapseOne" aria-expanded="true" aria-controls="panelsStayOpenExample4-collapseOne">
+                                    Do you have any daily specials?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample4-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpenExample4-headingOne">
+                                <div class="accordion-body">
+                                    Yes, we have daily specials that vary each day. Check our menu board or ask a barista for today's special.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample4-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample4-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpenExample4-collapseTwo">
+                                    Do you host any events or workshops?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample4-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpenExample4-headingTwo">
+                                <div class="accordion-body">
+                                    Yes, we host regular coffee tasting events, barista workshops, and live music nights. Follow us on social media or check our website for upcoming events.
+                                </div>
+                            </div>
+                            </div>
+                        </div> <!-- end Special Offers and Events content -->
+
+
+                        <!-- start Ordering and Delivery content -->
+                        <div class="my-3">
+                            <h5>Ordering and Delivery</h5>
+                        </div>
+
+                        <div class="accordion mb-5" id="accordionPanelsStayOpenExample5">
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample5-headingOne">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample5-collapseOne" aria-expanded="true" aria-controls="panelsStayOpenExample5-collapseOne">
+                                    Can I place an order online?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample5-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpenExample5-headingOne">
+                                <div class="accordion-body">
+                                    Yes, you can place an order through our website or our mobile app for pickup or delivery.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample5-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample5-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpenExample5-collapseTwo">
+                                    Do you offer delivery services?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample5-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpenExample5-headingTwo">
+                                <div class="accordion-body">
+                                    Yes, we offer delivery through various delivery partners like Uber Eats, Grubhub, and DoorDash.
+                                </div>
+                            </div>
+                            </div>
+                        </div> <!-- end Ordering and Delivery content -->
+
+
+                        <!-- start Sustainability content -->
+                        <div class="my-3">
+                            <h5>Sustainability</h5>
+                        </div>
+
+                        <div class="accordion mb-5" id="accordionPanelsStayOpenExample6">
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample6-headingOne">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample6-collapseOne" aria-expanded="true" aria-controls="panelsStayOpenExample6-collapseOne">
+                                    Do you have any sustainable practices?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample6-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpenExample6-headingOne">
+                                <div class="accordion-body">
+                                    Yes, we are committed to sustainability. We use compostable cups, source our coffee beans from fair trade suppliers, and offer discounts for customers who bring their own reusable cups.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample6-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample6-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpenExample6-collapseTwo">
+                                    Can I recycle my coffee cup?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample6-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpenExample6-headingTwo">
+                                <div class="accordion-body">
+                                    Yes, we have recycling bins in our shop for paper cups, and we encourage customers to use them.
+                                </div>
+                            </div>
+                            </div>
+                        </div> <!-- end Sustainability content -->
+
+
+                        <!-- start Contact and Feedback content -->
+                        <div class="my-3">
+                            <h5>Contact and Feedback</h5>
+                        </div>
+
+                        <div class="accordion mb-5" id="accordionPanelsStayOpenExample7">
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample7-headingOne">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample7-collapseOne" aria-expanded="true" aria-controls="panelsStayOpenExample7-collapseOne">
+                                    How can I contact you?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample7-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpenExample7-headingOne">
+                                <div class="accordion-body">
+                                    You can contact us by phone at (123) 457-7890, or email us at info@coffeeshop.com.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpenExample7-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpenExample7-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpenExample7-collapseTwo">
+                                    How can I give feedback about my experience?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpenExample7-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpenExample7-headingTwo">
+                                <div class="accordion-body">
+                                    We love to hear from our customers! You can leave feedback through our website, on social media, or by filling out a feedback form in the shop.
+                                </div>
+                            </div>
+                            </div>
+                        </div> <!-- end Contact and Feedback content -->
+
+                    </div>
+                </div>
+            </div>
+        </section> <!-- end faqs content -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- start footer content -->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+        <footer class=" bg-light pt-5"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <h5>Links</h5>
+                        </div>
+                        <div class="d-flex flex-column" style="line-height: 35px;">
+                            <a href="index.html">Home</a>
+                            <a href="shop.html">Shop</a>
+                            <a href="franchise.html">franchise</a>
+                            <a href="location.html">Location</a>
+                            <a href="aboutus.html">About Us</a>
+                            <a href="faqs.html">FAQ's</a>
+                            <a href="terms-privacy.html">Terms in Privacy</a>
+                            <a href="terms-condition.html">Terms and Condition</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <h5>Social Media</h5>
+                        </div>
+                        <div class="d-flex flex-column" style="line-height: 35px;">
+                            <p ><i class="fa-brands fa-facebook me-2"></i> <a href="#">Onlinecoffeeshop@gmail.com</a></p>
+                            <p ><i class="fa-brands fa-square-instagram me-2"></i> <a href="#">Onlinecoffeeshop@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div>
+                            <img src="img/coffee-shop-logo-removebg.png" height="100px">
+                        </div>
+                    </div>
+                </div>
+                <div class="py-3 text-center">
+                    <p>Copyright © 2024, Online Coffee Shop.</p>
+                </div>
+            </div>
+        </footer> <!-- end of footer content-->
+        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="assets/js/function.js"></script>
+
+</body>
+</html>
