@@ -1,0 +1,64 @@
+@media screen and (max-width: 991px) {
+    #navbar {
+        background-color: #ecd3bf;
+    }
+    .navbar-nav {
+        text-align: center;
+    
+    }
+    .nav-item {
+        margin-bottom: 3px;
+        background: rgba(0,0,0,0.2);
+    }
+    .buttons {
+        display: block;
+        justify-content: center;
+    }
+}
+
+.font-coffee {
+    color: #80411e;
+}
+
+.paragraph-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.navbar-transparent {
+    background-color: rgba(250,250,250,0.5)
+}
+
+.navbar-scrolled {
+background-color: #ecd3bf;/* Adjust as needed */
+transition: background-color 0.3s ease;
+}
+
+.paragraph-title {
+    font-size: clamp(1.875rem, 0.625rem + 4.4444vw, 3.125rem);
+}
+
+.paragraph-text {
+    font-size: clamp(1.25rem, 0rem + 4.4444vw, 2.5rem);
+}
+
+.aboutus-background {
+    height: 400px;
+    background:rgba(250,250,250,0.1)url('../../img/aboutus-coffee.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:hue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+li {
+    padding: 0px 25px;
+}
+
+li:hover {
+    background: rgba(0,0,0,0.2);
+}
